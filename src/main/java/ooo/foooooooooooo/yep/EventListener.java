@@ -29,7 +29,7 @@ public class EventListener {
     public static void onAdvancement(ServerPlayerEntity player, Advancement advancement) {
         var display = advancement.getDisplay();
 
-        if (display == null || display.isHidden()) {
+        if (display == null) {
             Yep.LOGGER.trace("Ignoring unsent display");
             return;
         }
