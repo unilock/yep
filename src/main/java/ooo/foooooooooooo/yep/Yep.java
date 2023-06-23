@@ -12,7 +12,13 @@ import org.apache.logging.log4j.Logger;
 
 import java.util.Map;
 
-@Mod(modid = Tags.MODID, version = Tags.VERSION, name = Tags.MODNAME, acceptedMinecraftVersions = "[1.7.10]")
+@Mod(
+    modid = Tags.MODID,
+    version = Tags.VERSION,
+    name = Tags.MODNAME,
+    acceptedMinecraftVersions = "[1.7.10]",
+    dependencies = "after: ChromatiCraft; "
+)
 public class Yep {
     public static final ResourceLocation PLUGIN_CHANNEL = new ResourceLocation("velocity", Tags.MODID);
 
