@@ -6,7 +6,8 @@
     "name": "Yep",
     "description": "Forwards death messages and similar events to Velocity proxy plugins",
     "authors": [
-        "fooooooooooooooo"
+        "fooooooooooooooo",
+        "unilock"
     ],
     "contact": {
         "homepage": "https://github.com/fooooooooooooooo/yep/tree/fabric/1.19.2",
@@ -28,8 +29,7 @@
 
     "depends": {
         "fabricloader": "*",
-        "fabric-api": "*",
-        "minecraft": "~1.19.2",
-        "java": ">=17"
+        "fabric": "*",
+        "minecraft": "~1.19.2"
     }
 }
