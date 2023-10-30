@@ -20,8 +20,6 @@ public class PluginMessenger {
         // TODO: wrappedBuffer instead of copiedBuffer is best here?
         var byteBuf = new PacketByteBuf(Unpooled.wrappedBuffer(msg.getBytes(StandardCharsets.UTF_8)));
 
-        // i'd rather not deal with the travesty that is Forge's packet system
-        // ...hopefully this doesn't change anytime soon though
         player.networkHandler.sendPacket(new CustomPayloadS2CPacket(Yep.PLUGIN_CHANNEL, byteBuf));
     }
 }
